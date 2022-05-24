@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="shortcut icon" href="" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <a href="index.html"><img src="img/LOGO.png" alt="logo" class="logo"></a>
+            <a href="tel:+79000000000" class="d-none fs-12 fw-6 d-sm-flex align-items-center">
+                <i class="bi bi-phone"></i>
+                <span class="ms-2">+7 (900) 000 00 00</span>
+            </a>
+            <nav class="d-none d-md-block">
+                <ul class="list-unstyled d-flex">
+                    <li><a href="/">Главная</a></li>
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Услуги <i class="bi bi-chevron-down"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="services.html">Проектирование</a></li>
+                            <li><a class="dropdown-item" href="services.html">Монтаж оборудования</a></li>
+                            <li><a class="dropdown-item" href="services.html">Поставка оборудования</a></li>
+                            <li><a class="dropdown-item" href="services.html">Ремонт оборудования</a></li>
+                            <li><a class="dropdown-item" href="services.html">Сервисное обслуживание</a></li>
+                            <li><a class="dropdown-item" href="services.html">Аренда оборудования</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="mobile-menu d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobile">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="sec-1 inner">
+            <img src="img/bg-1.jpg" alt="грузоподъемное оборудование" class="bg">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                    </ol>
+                </nav>
+                <h1 class="mb-0">Контакты</h1>
+            </div>
+        </section>
+
+        <section class="sec-8 py-4 py-md-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 fw-6 fs-12 mb-4 mb-md-0">
+                        <div class="mb-2">Режим работы:</div>
+                        <div class="mb-4">
+                            <i class="bi bi-clock"></i>
+                            <span class="ms-2">Пн-Пт: 9:00 - 18:00</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-phone"></i>
+                            <a href="tel:+79000000000" class="ms-2">+7 900 000 00 00</a>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:mail@mail.ru" class="ms-2">mail@mail.ru</a>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="ms-2">Город, улица, дом, корпус</span>
+                        </div>
+                        <div class="mb-2">Наши соцсети:</div>
+                        <div class="fs-20">
+                            <a href="" class="me-4"><i class="bi bi-whatsapp"></i></a>
+                            <a href="" class="me-4"><i class="bi bi-telegram"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c5d6db29ac44fb827c57a202348b7349470b9c0d5ce71460d681eedbb118ad4&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container h-100 text-center d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center">
+            <div>Название фирмы @ <span id="year"></span></div>
+            <img src="img/logo-white.png" alt="logo" class="logo d-none d-md-block">
+            <div class="mt-2 mt-sm-0"><a href="/">Политика конфиденциальности</a></div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <img src="img/bg-modal.jpg" alt="оградительная лента" class="bg">
+                    <form action="">
+                        <h5 class="text-center">Заполните форму</h5>
+                        <div class="text-center mb-4">Наш менеджер свяжется с вами в ближайшее время</div>
+                        <input type="text" class="mb-3" placeholder="Имя"/>
+                        <input type="tel" class="mb-3" placeholder="Телефон"/>
+                        <textarea rows="4" placeholder="Комментарий" class="mb-3"></textarea>
+                        <label class="d-flex align-items-start mb-3">
+                            <input type="checkbox">
+                            <span class="flex-1 ms-2">Я согласен(а) на обработку персональных данных</span>
+                        </label>
+                        <button class="btn w-100">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobile">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0z"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            </svg>
+        </button>
+        <div class="offcanvas-body py-5">
+            <a href="tel:+79000000000" class="d-flex fs-15 fw-6 d-sm-none align-items-center justify-content-center mb-5">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M15.5 1h-8A2.5 2.5 0 005 3.5v17A2.5 2.5 0 007.5 23h8a2.5 2.5 0 002.5-2.5v-17A2.5 2.5 0 0015.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"></path></svg>
+                <span class="ms-2">+7 (900) 000 00 00</span>
+            </a>
+            <nav>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li>
+                        <a>Услуги</a>
+                        <ul class="list-unstyled fs-08 fw-3 mt-3">
+                            <li><a href="services.html">Проектирование</a></li>
+                            <li><a href="services.html">Монтаж оборудования</a></li>
+                            <li><a href="services.html">Поставка оборудования</a></li>
+                            <li><a href="services.html">Ремонт оборудования</a></li>
+                            <li><a href="services.html">Сервисное обслуживание</a></li>
+                            <li><a href="services.html">Аренда оборудования</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-72WD92hLs7T5FAXn3vkNZflWG6pglUDDpm87TeQmfSg8KnrymL2G30R7as4FmTwhgu9H7eSzDCX3mjitSecKnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
