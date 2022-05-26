@@ -6,7 +6,7 @@
     --title-font: 'Roboto Slab';
     --color-1: #2A2A29;
     --color-2: #818181;
-    --color-3: #D8D8D8;
+    --color-3: #e5e5e5;
     --accent-color: #FEEC00;
 }
 body {
@@ -368,9 +368,10 @@ header nav>ul a:active, header nav>ul button:active {
 .sec-5 {
     background-color: var(--color-3);
 }
-.sec-5 svg {
-    width: 3em;
-    height: 3em;
+.sec-5 svg, .sec-5  .icon {
+    width: 8em;
+    height: 8em;
+    object-fit: scale-down;
     margin-bottom: 1em;
     color: #000;
     filter: drop-shadow(2px 3px 1px var(--accent-color));
