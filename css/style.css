@@ -316,6 +316,7 @@ header nav>ul a:active, header nav>ul button:active {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    width: calc(100%/3);
 }
 .sec-2 div:nth-child(1){
     background-color: var(--color-1);
@@ -343,7 +344,10 @@ header nav>ul a:active, header nav>ul button:active {
 }
 @media (max-width: 767px){
     .sec-2 {flex-direction: column;}
-    .sec-2 div {height: 170px;}
+    .sec-2 div {
+        height: 170px;
+        width: 100%;
+    }
 }
 
 .sec-4 {
