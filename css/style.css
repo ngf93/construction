@@ -369,8 +369,8 @@ header nav>ul a:active, header nav>ul button:active {
     background-color: var(--color-3);
 }
 .sec-5 svg, .sec-5  .icon {
-    width: 8em;
-    height: 8em;
+    width: 3em;
+    height: 3em;
     object-fit: scale-down;
     margin-bottom: 1em;
     color: #000;
